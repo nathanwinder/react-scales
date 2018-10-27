@@ -1,0 +1,1 @@
+{"version":3,"file":"createScaleContext.js","sourceRoot":"","sources":["../src/createScaleContext.tsx"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,MAAM,OAAO,CAAC;AAGtC,MAAM,UAAU,kBAAkB,CAAmB,YAAe;IAClE,MAAM,YAAY,GAAG,aAAa,CAAC,EAAE,KAAK,EAAE,YAAY,EAAE,CAAC,CAAC;IAE3D,YAAoB,CAAC,WAAW,GAAG,cAAc,CAAC;IACnD,OAAO,YAAY,CAAC;AACtB,CAAC"}
