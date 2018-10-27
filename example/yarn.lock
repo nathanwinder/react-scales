@@ -46,6 +46,14 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
+"@winderful/react-breakpoints@github:nathanwinder/react-breakpoints":
+  version "0.1.0"
+  resolved "https://codeload.github.com/nathanwinder/react-breakpoints/tar.gz/329a43d7b62e9140dfc493324aafdebe16a4cbb7"
+
+"@winderful/react-scales@github:nathanwinder/react-scales":
+  version "0.1.0"
+  resolved "https://codeload.github.com/nathanwinder/react-scales/tar.gz/2609c9a7c80920d927bb95d607ec93cde291f2dd"
+
 abab@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.4.tgz#5faad9c2c07f60dd76770f71cf025b62a63cfd4e"

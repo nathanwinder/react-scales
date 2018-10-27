@@ -1,30 +1,20 @@
 import * as React from "react";
-import { IScale, IScaleContextValue, Omit } from "./types";
+import {
+  IScale,
+  IScaleContextValue,
+  IWithScale,
+  Omit,
+  ScaledProps
+} from "./types";
 
-export type IWithScaleProps<P, S extends string, K extends keyof P> = Omit<
-  P,
-  K
-> &
-  { [Key in K]: P[K] | S };
-
-export type IWithScale<
-  P,
-  S extends string,
-  K extends keyof P
-> = React.ComponentType<IWithScaleProps<P, S, K>>;
-
-export default function withScaleProps<
-  T extends IScale,
-  S extends string,
-  K extends keyof P,
-  P
->(
+export function withScaleProps<S extends IScale, K extends keyof P, P>(
   Component: React.ComponentType<P>,
-  ScaleContext: React.Context<IScaleContextValue<T>>,
+  ScaleContext: React.Context<IScaleContextValue<S>>,
   ...props: K[]
 ): IWithScale<P, S, K> {
-  type ScaledProps = { [Key in K]: P[K] | S };
-  class WithScale extends React.Component<Omit<P, K> & ScaledProps> {
+  class WithScale extends React.Component<
+    Omit<P, K> & Pick<ScaledProps<P, S>, K>
+  > {
     public render() {
       return (
         <ScaleContext.Consumer>
