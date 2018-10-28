@@ -48,7 +48,7 @@ const App = () => (
 )
 ```
 
-- Mix and match scales with literal values.
+- Mix scales with literal values.
 
 ```html
 const App = () => (
